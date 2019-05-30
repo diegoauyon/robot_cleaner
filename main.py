@@ -1,13 +1,13 @@
 import sys
-from grid import Grid
-from robot import Robot
-from cleaner_algorithm import dfs
+from src.grid import Grid
+from src.robot import Robot
+from src.cleaner_algorithm import dfs
 
 if __name__ == '__main__':
 
     debug = False
     # To print all robot movement
-    if sys.argv[1].startswith('debug'):
+    if len(sys.argv) > 1 and sys.argv[1].startswith('debug'):
         debug = True
 
     grid = Grid([

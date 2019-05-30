@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Direction():
+class Direction:
     COORDINATES = {
         0: (1, 0),
         1: (0, 1),

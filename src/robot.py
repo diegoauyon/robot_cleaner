@@ -1,14 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from direction import Direction
+from src.direction import Direction
 
 
 class Robot:
     def __init__(self, grid, debug=False):
         self.__grid = grid
         self.__position = Direction.DOWN
-        self.__debug=debug
+        self.__debug = debug
 
     def _get_position(self):
         return self.__position

@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from direction import Direction
-from robot import Robot
+from src.direction import Direction
+from src.robot import Robot
 
 
 class GridStatus:
@@ -64,8 +64,8 @@ class Grid:
     def print_room(self):
         # for testing
         print(
+            '\nRobot position: ', self.__robot_position,
             '\n'.join(str(r) for r in self.__grid),
-            '\nRobot at: ', self.__robot_position,
             '\nNeeds to Clean: ', self.__cleaned_up_positions,
             '\n'
         )
